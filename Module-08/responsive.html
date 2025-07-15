@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resopsive Flex</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .box {
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .container-2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .item {
+            width: 200px;
+            height: 100px;
+            background-color: bisque;
+            border: 2px solid blueviolet;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            .box {
+            background-color: greenyellow;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima iure quae beatae et doloremque totam quam! Dolore recusandae explicabo quisquam quas. Exercitationem assumenda ad unde quo incidunt? Soluta eaque dolore facere rerum nulla quo iste expedita totam praesentium provident voluptas cupiditate excepturi voluptatem ipsum debitis corporis quod labore perspiciatis nam, nisi temporibus dignissimos officia. Totam id autem earum repellendus mollitia eos necessitatibus. Rem, nemo commodi. Rem, asperiores distinctio? Nesciunt ex hic maiores quam? Enim ducimus quam reprehenderit veniam repudiandae neque harum id rem officiis corrupti, pariatur cum quod quia quaerat odio aliquam qui inventore, optio ipsa commodi, perspiciatis vitae.</p>
+        </div>
+        <div class="box">
+            <h3>Second box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima iure quae beatae et doloremque totam quam! Dolore recusandae explicabo quisquam quas. Exercitationem assumenda ad unde quo incidunt? Soluta eaque dolore facere rerum nulla quo iste expedita totam praesentium provident voluptas cupiditate excepturi voluptatem ipsum debitis corporis quod labore perspiciatis nam, nisi temporibus dignissimos officia. Totam id autem earum repellendus mollitia eos necessitatibus. Rem, nemo commodi. Rem, asperiores distinctio? Nesciunt ex hic maiores quam? Enim ducimus quam reprehenderit veniam repudiandae neque harum id rem officiis corrupti, pariatur cum quod quia quaerat odio aliquam qui inventore, optio ipsa commodi, perspiciatis vitae.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+    </div>
+</body>
+</html>
