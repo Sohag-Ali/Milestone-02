@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 01</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .left {
+        width: 30%;
+      }
+      .left h1{
+        font-size: 1.5em;
+      }
+      .Right {
+        width: 70%;
+        border: 2px solid black;
+      }
+      .Right img{
+        width: 100%;
+      }
+
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+         .left h1{
+        font-size: 1em;
+      }
+        .left {
+          width: 100%;
+        }
+        .Right {
+          width: 100%;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia libero dicta, vel autem beatae velit molestiae iusto doloremque veniam ipsa eveniet quas dolores ducimus minima eligendi maiores amet ratione laborum provident facilis inventore! Corporis neque voluptas, ab reprehenderit modi debitis? Accusamus reiciendis illum voluptas delectus necessitatibus magni cupiditate optio dignissimos.</h1>
+      </div>
+      <div class="Right">
+        <img src="OIP (1).webp" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
