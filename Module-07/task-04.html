@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .header {
+        background-color: brown;
+    }
+    .footer {
+        background-color: aquamarine;
+    }
+    .main {
+        background-color: blueviolet;
+    }
+    .slidebar {
+        background-color: aqua;
+    }
+    .advertise {
+        background-color: rgb(142, 175, 34);
+    }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 8px;
+            text-align: center;
+     
+            grid-template-areas: 
+            "h h h h"
+            "m m m a"
+            "m m m s"
+            "f f f f"
+            ;
+        }
+        .container, div {
+                   padding: 30px;
+        }
+        .header {
+            grid-area: h;
+        }
+        .main {
+            grid-area: m;
+        }
+        .slidebar {
+            grid-area: s;
+        }
+        .advertise {
+            grid-area: a;
+        }
+        .footer {
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="main">main</div>
+      <div class="slidebar">slidebar</div>
+      <div class="advertise">advertise</div>
+      <div class="footer">footer</div>
+    </div>
+</body>
+</html>
