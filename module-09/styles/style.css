@@ -14,7 +14,7 @@
     font-weight: 700;
 }
 
-main {
+main, footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -131,9 +131,23 @@ padding: 20px;
     
 }
 
+#experiance-badge {
+padding: 50px 42px;
+font-size: 1.5rem;
+font-weight: 500;
+margin-left: -92px;
+margin-top: -100px;
+}
+
+#experiance-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 
-
+.feature-architec img {
+    width: 100%;
+}
 
 
 
@@ -181,9 +195,33 @@ padding: 20px;
 .sponsor-company img{
     filter: grayscale(100);
 }
+
+footer {
+     background-color: #FFF4E7;
+}
+.foot {
+    padding: 38px 410px;
+    margin: 130px 0px;
+    border-radius: 8px;
+   
+}
+.foot p{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams {
+    .navbar, .nav-links, .teams, .feature {
         flex-direction: column;
     }
     .team-img-container, .facts-container,
@@ -202,6 +240,16 @@ padding: 20px;
     .our-fratures {
         margin-left: 20px;
     }
+    #experiance-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .foot {
+    padding: 38px 50px;
+ 
+   
+}
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -222,4 +270,9 @@ padding: 20px;
         gap: 50px;
         justify-items: center;
     }
+
+     .foot {
+    padding: 38px 150px;
+}
+    
 }
