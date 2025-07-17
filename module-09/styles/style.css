@@ -140,13 +140,35 @@ main > section {
     margin-top: 10px;
 }
 
+.sposor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-company {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsor-company img{
+    filter: grayscale(100);
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar, .nav-links, .teams {
         flex-direction: column;
     }
-    .team-img-container {
-        grid-template-columns: repeat(1,1fr);
+    .team-img-container, .facts-container,
+    .sponsor-company {
+        grid-template-columns: 1fr;
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+   .sponsor-company {
+    justify-items: center;
+        gap: 50px;
+
     }
     .our-fratures {
         margin-left: 20px;
@@ -159,5 +181,16 @@ main > section {
     }
     .our-fratures {
         margin: 50px auto;
+    }
+    .facts-container {
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(2,1fr); */
+        justify-items: center;
+        gap: 24px;
+    }
+    .sponsor-company{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
